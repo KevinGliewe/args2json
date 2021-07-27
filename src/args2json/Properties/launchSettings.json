@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "args2json": {
+      "commandName": "Project",
+      "commandLineArgs": "--version-pattern \"^5\\.0\\.\\3$\" --output \"./bin\""
+    }
+  }
+}

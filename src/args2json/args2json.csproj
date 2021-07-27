@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<OutputType>Exe</OutputType>
+	<TargetFramework>net5.0</TargetFramework>
+	<PackAsTool>true</PackAsTool>
+	<ToolCommandName>args2json</ToolCommandName>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<Company>Gliewe.NET</Company>
+		<Copyright>Copyright (C) Kevin Gliewe</Copyright>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<WarningsAsErrors>nullable</WarningsAsErrors>
+		<Authors>$(Company)</Authors>
+		<Description>Prints arguments as json</Description>
+		<PackageTags>Arguments, json</PackageTags>
+		<PackageProjectUrl>https://kevingliewe.github.io/args2json/</PackageProjectUrl>
+		<PublishRepositoryUrl>https://github.com/KevinGliewe/args2json</PublishRepositoryUrl>
+		<PackageReleaseNotes>https://github.com/KevinGliewe/args2json/blob/master/Changelog.md</PackageReleaseNotes>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<DebugType>embedded</DebugType>
+		<RepositoryUrl>https://github.com/KevinGliewe/args2json</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Text.Json" Version="5.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="../../doc/icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>
